@@ -113,6 +113,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    margin-left: 1rem;
   }
 }
 
@@ -128,7 +129,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
 }
 
 .dropdown button span {
