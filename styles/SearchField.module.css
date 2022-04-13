@@ -1,0 +1,47 @@
+.container {
+  position: absolute;
+  border-bottom: 1px solid var(--primary-border-color);
+  top: 102%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-bg-color);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: all 0.2s ease-in-out;
+  z-index: 5;
+}
+
+.form {
+  margin: 1rem;
+}
+
+.form input {
+  border: none;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  width: 95%;
+  outline: none;
+}
+
+.form button {
+  border: none;
+  background-color: var(--primary-bg-color);
+  color: #5c5c5c;
+  transform: scale(1.5);
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.closeButton {
+  transform: scale(1.5);
+  color: #5c5c5c;
+  cursor: pointer;
+}
+
+.searchFieldActive {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

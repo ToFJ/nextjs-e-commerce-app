@@ -7,13 +7,21 @@ import { FiShoppingCart, FiSearch } from "react-icons/fi";
 import { AiFillCaretDown, AiFillCaretUp, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import styles from "../styles/Navbar.module.css";
+
 import dropdownStyles from "../styles/DropdownMenu.module.css";
 import DropdownMenu from "./DropdownMenu";
 
+import SearchField from "./SearchField";
+import searchFieldStyles from "../styles/SearchField.module.css";
+
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState("");
+
   const [isDropdown, setIsDropdown] = useState(false);
   const [dropdown, setDropdown] = useState("");
+
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchField, setSearchField] = useState("");
 
   const toggleNav = () => {
     isToggle === "" ? setIsToggle(styles.nav__active) : setIsToggle("");
@@ -28,7 +36,17 @@ const Navbar = () => {
       setDropdown(dropdownStyles.dropdownMenuActive);
     }
   };
-  console.log(dropdown);
+
+  const toggleSearchField = () => {
+    if (isSearchOpen) {
+      setIsSearchOpen(false);
+      setSearchField("");
+    } else {
+      setIsSearchOpen(true);
+      setSearchField(searchFieldStyles.searchFieldActive);
+    }
+  };
+
   return (
     <nav className={styles.nav}>
       <div className={styles.nav__logo}>
@@ -65,11 +83,9 @@ const Navbar = () => {
       </ul>
 
       <div className={styles.nav__icons}>
-        <Link href="/">
-          <a>
-            <FiSearch />
-          </a>
-        </Link>
+        <button onClick={toggleSearchField}>
+          <FiSearch />
+        </button>
         <Link href="/">
           <a>
             <FiShoppingCart />
@@ -79,6 +95,7 @@ const Navbar = () => {
       <div onClick={toggleNav} className={styles.nav__toggle}>
         {isToggle === "" ? <AiOutlineMenu /> : <AiOutlineClose />}
       </div>
+      <SearchField searchField={searchField} toggleSearchField={toggleSearchField} />
     </nav>
   );
 };

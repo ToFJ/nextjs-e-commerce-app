@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #000;
+  --secondary-color: #1c1b1b;
+  --primary-bg-color: #efefef;
+  --primary-border-color: #e9ecef;
+  --primary-hover-color: #e9ecef;
+
+  --nav-bg-color: #fff;
+  --nav-mobile-bg-color: #1c1b1b;
+  --nav-mobile-primary-color: #e7e7e7;
+  --nav-primary-underline-color: #808080;
+}
+
 body,
 h1,
 h2,

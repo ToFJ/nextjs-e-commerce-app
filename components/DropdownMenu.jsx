@@ -3,37 +3,35 @@ import Link from "next/link";
 
 import styles from "../styles/DropdownMenu.module.css";
 
-const DropdownMenu = ({ dropdown, isDropdown }) => {
-  console.log(dropdown);
-
+const DropdownMenu = ({ dropdown }) => {
   return (
     <div className={`${styles.dropdownMenu} ${dropdown}`}>
       <section>
         <h2>Women</h2>
         <div>
-          <Link href="/">Women Dresses</Link>
+          <Link href="/">Women&apos;s Dresses</Link>
         </div>
         <div>
-          <Link href="/">Women Shoes</Link>
+          <Link href="/">Women&apos;s Shoes</Link>
         </div>
         <div>
-          <Link href="/">Women Watches</Link>
+          <Link href="/">Women&apos;s Watches</Link>
         </div>
         <div>
-          <Link href="/">Women Bags</Link>
+          <Link href="/">Women&apos;s Bags</Link>
         </div>
         <div>
-          <Link href="/">Women Jewllery</Link>
+          <Link href="/">Women&apos;s Jewllery</Link>
         </div>
         <h2>Men</h2>
         <div>
-          <Link href="/">Men Shirts</Link>
+          <Link href="/">Men&apos;s Shirts</Link>
         </div>
         <div>
-          <Link href="/">Men Shoes</Link>
+          <Link href="/">Men&apos;s Shoes</Link>
         </div>
         <div>
-          <Link href="/">Men Watches</Link>
+          <Link href="/">Men&apos;s Watches</Link>
         </div>
         <div>
           <Link href="/">Sunglasses</Link>
