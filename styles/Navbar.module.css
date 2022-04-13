@@ -125,6 +125,11 @@
     margin-left: 1rem;
   }
 }
+@media (max-width: 268px) {
+  .nav__icons {
+    margin: 0;
+  }
+}
 
 .dropdown {
   position: relative;

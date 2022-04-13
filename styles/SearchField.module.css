@@ -21,7 +21,8 @@
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-size: 1.5rem;
-  width: 95%;
+  width: 90%;
+  padding-right: 1rem;
   outline: none;
 }
 
@@ -44,4 +45,19 @@
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .container {
+    top: 99%;
+  }
+  .form input {
+    width: 80%;
+    /* font-size: 1rem; */
+  }
+  .closeButton {
+    position: absolute;
+    top: 35%;
+    /* display: none; */
+  }
 }
