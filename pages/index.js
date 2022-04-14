@@ -1,3 +1,12 @@
+import Cart from "../components/cart";
+import Hero from "../components/hero";
+
 export default function Home() {
-  return <div>year</div>;
+  return (
+    <>
+      <section>
+        <Hero />
+      </section>
+    </>
+  );
 }

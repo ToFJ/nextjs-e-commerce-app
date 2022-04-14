@@ -64,11 +64,11 @@ const Navbar = () => {
           <button onClick={toggleDropdown}>
             {isDropdown ? (
               <span>
-                Shop <AiFillCaretUp />
+                Shop <AiFillCaretUp className={styles.caretUp} />
               </span>
             ) : (
               <span>
-                Shop <AiFillCaretDown />
+                Shop <AiFillCaretDown className={styles.caretUp} />
               </span>
             )}
           </button>

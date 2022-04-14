@@ -28,7 +28,7 @@
 
 .form button {
   border: none;
-  background-color: var(--primary-bg-color);
+  background-color: transparent;
   color: #5c5c5c;
   transform: scale(1.5);
   margin: 0 0.5rem;
@@ -36,6 +36,10 @@
 }
 
 .closeButton {
+  position: absolute;
+  top: 35%;
+  right: 3%;
+
   transform: scale(1.5);
   color: #5c5c5c;
   cursor: pointer;
@@ -53,11 +57,10 @@
   }
   .form input {
     width: 80%;
-    /* font-size: 1rem; */
   }
   .closeButton {
     position: absolute;
     top: 35%;
-    /* display: none; */
+    right: 6%;
   }
 }

@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+}
+
+.heroText {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background-color: transparent;
+}
