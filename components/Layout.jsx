@@ -13,10 +13,6 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&family=Square+Peg&display=swap"
-          rel="stylesheet"
-        />
         <title>Next.js E-commerce</title>
       </Head>
       <header>
