@@ -9,7 +9,9 @@ const Hero = () => {
   return (
     <>
       <div className={styles.container}>
-        <Image className={styles.heroImg} src={heroImg} width={"1920px"} height={"850px"} alt="Hero image" />
+        <div className={styles.imageContainer}>
+          <Image className={styles.heroImg} src={heroImg} width={"1920px"} height={"850px"} alt="Hero image" />
+        </div>
         <div>
           <section className={styles.heroText}>
             <h3 className={styles.hero1}>Enjoy Summer {new Date().getUTCFullYear()}</h3>
