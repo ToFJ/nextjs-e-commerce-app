@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  margin-top: 1rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrapper div {
+  position: relative;
+}
+
+.wrapper div a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  letter-spacing: 0.2ch;
+}
+
+.wrapper div a::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 0;
+  height: 10%;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper div a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

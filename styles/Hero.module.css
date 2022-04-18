@@ -45,7 +45,7 @@ body .hero2 {
   border-bottom: 3px solid black;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
-  padding-top: 0.2rem;
+  padding: 0.25rem 0.5rem;
   text-decoration: none;
   color: black;
 }
