@@ -107,7 +107,7 @@
 
 @media (max-width: 456px) {
   .countdown div {
-    margin: 0rem;
+    margin: -0.5rem;
     padding: 0;
     background-color: transparent;
   }
@@ -115,9 +115,5 @@
   .countdown__time {
     font-size: 1rem;
     padding: 0.5rem;
-  }
-  .daysMedia {
-    position: absolute;
-    visibility: hidden;
   }
 }
