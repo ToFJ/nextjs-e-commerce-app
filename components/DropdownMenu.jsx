@@ -33,9 +33,6 @@ const DropdownMenu = ({ dropdown }) => {
         <div>
           <Link href="/">Men&apos;s Watches</Link>
         </div>
-        <div>
-          <Link href="/">Sunglasses</Link>
-        </div>
       </section>
     </div>
   );

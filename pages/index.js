@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import malefashion from "../images/malefashion.png";
-import femalefashion from "../images/femalefashion.png";
-import accbanner from "../images/accbanner.png";
+import malefashion from "../public/malefashion.png";
+import femalefashion from "../public/femalefashion.png";
+import accbanner from "../public/accbanner.png";
 
 import styles from "../styles/Index.module.css";
 

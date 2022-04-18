@@ -24,7 +24,13 @@ const Navbar = () => {
   const [searchField, setSearchField] = useState("");
 
   const toggleNav = () => {
-    isToggle === "" ? setIsToggle(styles.nav__active) : setIsToggle("");
+    if (isToggle) {
+      setIsToggle("");
+      setIsDropdown(false);
+      setDropdown("");
+    } else {
+      setIsToggle(styles.nav__active);
+    }
   };
 
   const toggleDropdown = () => {
@@ -34,6 +40,8 @@ const Navbar = () => {
     } else {
       setIsDropdown(true);
       setDropdown(dropdownStyles.dropdownMenuActive);
+      setIsSearchOpen(false);
+      setSearchField("");
     }
   };
 
@@ -44,6 +52,8 @@ const Navbar = () => {
     } else {
       setIsSearchOpen(true);
       setSearchField(searchFieldStyles.searchFieldActive);
+      setIsDropdown(false);
+      setDropdown("");
     }
   };
 

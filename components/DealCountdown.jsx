@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import img from "../images/discountimg.png";
+import img from "../public/discountimg.png";
 
 import styles from "../styles/DealCountdown.module.css";
 
