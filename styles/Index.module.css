@@ -14,16 +14,13 @@
 }
 
 .wrapper div a {
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
   background-color: black;
   padding: 0.5rem 1rem;
-  width: max-content;
   letter-spacing: 0.2ch;
 }
 
@@ -45,8 +42,5 @@
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
-  }
-  .wrapper div a {
-    width: max-content;
   }
 }
