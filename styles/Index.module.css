@@ -15,6 +15,7 @@
 
 .wrapper div a {
   position: absolute;
+  display: inline-block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,5 +45,8 @@
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
+  }
+  .wrapper div a {
+    width: max-content;
   }
 }
