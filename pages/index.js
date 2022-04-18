@@ -8,6 +8,7 @@ import styles from "../styles/Index.module.css";
 
 import Hero from "../components/Hero";
 // import DealCountdown from "../components/DealCountdown";
+import testimg from "../public/Screenshot_1.png";
 
 import { useEffect, useState } from "react";
 import img from "../public/discountimg.png";
@@ -87,6 +88,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Image src={testimg} layout="responsive" alt="test" />
     </>
   );
 }
