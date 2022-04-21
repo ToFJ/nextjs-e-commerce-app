@@ -10,7 +10,7 @@ import Hero from "../components/Hero";
 import DealCountdown from "../components/DealCountdown";
 import IndexProducts from "../components/IndexProducts";
 
-export default function Home({ data }) {
+export default function Home() {
   return (
     <>
       <Hero />
@@ -31,18 +31,7 @@ export default function Home({ data }) {
         </div>
       </section>
       <DealCountdown />
-      <IndexProducts data={data} />
+      <IndexProducts />
     </>
   );
 }
-
-// export async function getStaticProps() {
-//   const resp = await fetch("https://dummyjson.com/products/category/womens-dresses");
-//   const data = await resp.json();
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
