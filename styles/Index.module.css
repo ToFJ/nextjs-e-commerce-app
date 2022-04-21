@@ -29,7 +29,7 @@
 .wrapper div a::before {
   content: "";
   position: absolute;
-  top: 96.5%;
+  top: 99%;
   left: 0;
   width: 0;
   height: 1%;

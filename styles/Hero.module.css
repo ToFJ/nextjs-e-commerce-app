@@ -2,6 +2,13 @@
   position: relative;
 }
 
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heroText {
   position: absolute;
   top: 30%;
